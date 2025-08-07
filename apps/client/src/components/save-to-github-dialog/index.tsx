@@ -277,7 +277,7 @@ const SaveToGithubDialog = forwardRef<
                         githubUser,
                         branch,
                         selectedItem,
-                        watch('fileName'),
+                        watch('fileName') || '',
                       )}
                     </span>
                   </p>
