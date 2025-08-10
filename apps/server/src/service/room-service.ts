@@ -5,8 +5,6 @@
  * - User tracking
  * - Room state management
  * - User data sync
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import type { Server, Socket } from 'socket.io';
@@ -30,7 +28,6 @@ const roomNotes = new Map<string, string>();
  * Get the room ID that a user is currently in - O(1) operation
  */
 export const getUserRoom = (socket: Socket): string | undefined => {
-  // Socket.rooms is a Set, so we convert to array only for room access
   for (const room of socket.rooms) {
     if (room !== socket.id) return room;
   }
@@ -43,7 +40,6 @@ export const getUserRoom = (socket: Socket): string | undefined => {
 export const create = async (socket: Socket, name: string): Promise<void> => {
   const customId = userService.connect(socket, name);
 
-  // Generate unique room ID
   let roomID: string;
   do {
     roomID = generateRoomID();
@@ -51,7 +47,6 @@ export const create = async (socket: Socket, name: string): Promise<void> => {
 
   await socket.join(roomID);
 
-  // Initialize room cache
   roomUsersCache.set(roomID, { [customId]: name });
 
   socket.emit(RoomServiceMsg.CREATE, roomID, customId);
@@ -64,7 +59,7 @@ export const join = async (
   socket: Socket,
   io: Server,
   roomID: string,
-  name: string,
+  name: string
 ): Promise<void> => {
   roomID = normalizeRoomId(roomID);
 
@@ -76,12 +71,10 @@ export const join = async (
   const customId = userService.connect(socket, name);
   await socket.join(roomID);
 
-  // Update room cache
   const users = roomUsersCache.get(roomID) || {};
   users[customId] = name;
   roomUsersCache.set(roomID, users);
 
-  // Emit events
   socket.emit(RoomServiceMsg.JOIN, customId);
   socket.to(roomID).emit(RoomServiceMsg.SYNC_USERS, users);
 };
@@ -129,42 +122,39 @@ export const leave = async (socket: Socket, io: Server): Promise<void> => {
 export const getUsersInRoom = (
   socket: Socket,
   io: Server,
-  roomID: string = getUserRoom(socket),
+  roomID?: string
 ): Record<string, string> => {
-  // Return empty object if no room
+  roomID = roomID ?? getUserRoom(socket);
   if (!roomID) return {};
 
-  // Check cache first
   let users = roomUsersCache.get(roomID);
 
-  // If not in cache, rebuild it
   if (!users) {
     const room = io.sockets.adapter.rooms.get(roomID);
     if (!room) return {};
 
     users = {};
     for (const socketId of room) {
+      const socketInstance = io.sockets.sockets.get(socketId);
+      if (!socketInstance) continue;
+
       const username = userService.getUsername(socketId);
-      const customId = userService.getSocCustomId(
-        io.sockets.sockets.get(socketId),
-      );
+      const customId = userService.getSocCustomId(socketInstance);
+
       if (username && customId) {
         users[customId] = username;
       }
     }
 
-    // Update cache
     roomUsersCache.set(roomID, users);
   }
 
-  // Update client
   io.to(socket.id).emit(RoomServiceMsg.SYNC_USERS, users);
   return users;
 };
 
 /**
  * Clean up room cache when server restarts or room is deleted
- * Should be called when appropriate
  */
 export const cleanupRoomCache = (roomID: string): void => {
   roomUsersCache.delete(roomID);
@@ -192,6 +182,9 @@ export const updateNote = (socket: Socket, note: string): void => {
   roomNotes.set(roomID, note);
 };
 
+/**
+ * Update the "executing" state in a room
+ */
 export const updateExecuting = (socket: Socket, executing: boolean): void => {
   const roomID = getUserRoom(socket);
   if (!roomID) return;

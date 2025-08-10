@@ -8,11 +8,9 @@
  * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
-import type { Socket } from 'socket.io';
-
+import type { Socket, Server } from 'socket.io';
 import { CodeServiceMsg } from '@codex/types/message';
 import type { Cursor } from '@codex/types/operation';
-
 import { getUserRoom } from './room-service';
 
 // Use a single Map for user data to reduce memory overhead
@@ -92,9 +90,8 @@ export const updateCursor = (socket: Socket, cursor: Cursor): void => {
   const userData = socketToUserData.get(socket.id);
 
   if (userData) {
-    socket
-      .to(roomId)
-      .emit(CodeServiceMsg.UPDATE_CURSOR, userData.customId, cursor);
+    if (!roomId) return;
+socket.to(roomId).emit(CodeServiceMsg.UPDATE_CURSOR, userData.customId, cursor);
   }
 };
 
@@ -124,4 +121,30 @@ export const getCustomId = (socketId: string): string | undefined => {
  */
 export const isCustomIdInUse = (customId: string): boolean => {
   return customIdToSocketId.has(customId);
+};
+
+/**
+ * Get all users in a room with their custom IDs and usernames
+ */
+export const getUsersInRoom = (
+  socket: Socket,
+  io: Server,
+  roomID?: string
+): Record<string, string> => {
+  const roomId = roomID ?? getUserRoom(socket);
+  if (!roomId) return {};
+
+  const users: Record<string, string> = {};
+
+  const socketsInRoom = io.sockets.adapter.rooms.get(roomId);
+  if (!socketsInRoom) return {};
+
+  for (const socketId of socketsInRoom) {
+    const userData = socketToUserData.get(socketId);
+    if (userData) {
+      users[userData.customId] = userData.username;
+    }
+  }
+
+  return users;
 };

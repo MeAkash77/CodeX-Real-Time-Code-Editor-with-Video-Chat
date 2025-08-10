@@ -1,4 +1,7 @@
 {
   "extends": "./tsconfig",
+  "compilerOptions": {
+    "lib": ["ES2021", "DOM"]
+  },
   "exclude": ["./tests/**/*", "jest.setup.ts"]
 }
