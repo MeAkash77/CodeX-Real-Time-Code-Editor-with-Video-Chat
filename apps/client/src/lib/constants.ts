@@ -6,7 +6,9 @@
  * - OAuth credentials
  * - App metadata
  *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
+ * Updated for your deployment:
+ * Frontend: Vercel
+ * Backend: Render
  */
 
 export const IS_DEV_ENV =
@@ -14,12 +16,15 @@ export const IS_DEV_ENV =
   process.env.NEXT_PUBLIC_ENV === 'development' ||
   process.env.NODE_ENV === 'development';
 
+// Client URL (Frontend)
 export const BASE_CLIENT_URL = IS_DEV_ENV
   ? 'http://localhost:3000'
-  : 'https://codex.dulapahv.dev';
+  : 'https://code-x-real-time-code-editor-with-video-chat-client-9ugjl66ah.vercel.app';
+
+// Server URL (Backend)
 export const BASE_SERVER_URL = IS_DEV_ENV
   ? 'http://localhost:3001'
-  : 'https://codex-server.dulapahv.dev';
+  : 'https://codex-real-time-code-editor-with-video-ns5k.onrender.com';
 
 export const STATUS_URL = 'https://codex-status.dulapahv.dev';
 export const KASCA_SERVER_MONITOR_ID = '3495778';
