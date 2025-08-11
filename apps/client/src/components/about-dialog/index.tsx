@@ -119,7 +119,7 @@ const AboutDialog = forwardRef<AboutDialogRef, AboutDialogProps>(
 
             <div className="text-foreground space-y-2">
               <p className="text-center">
-                Made with 💕 by <span className="font-medium">dulapahv</span>
+                Made with 💕 by <span className="font-medium">Akash</span>
               </p>
               <nav
                 className="grid grid-cols-4 gap-2"
@@ -180,7 +180,7 @@ const AboutDialog = forwardRef<AboutDialogRef, AboutDialogProps>(
 
           <div className="mx-4 space-y-2">
             <p className="text-center">
-              Made with 💕 by <span className="font-medium">dulapahv</span>
+              Made with 💕 by <span className="font-medium">Akash</span>
             </p>
             <nav className="grid grid-cols-2 gap-2" aria-label="External links">
               <ExternalLink forceDark={forceDark} />

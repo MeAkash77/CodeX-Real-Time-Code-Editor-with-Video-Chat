@@ -19,7 +19,7 @@ export const BASE_CLIENT_URL =
   process.env.NEXT_PUBLIC_CLIENT_URL ||
   (IS_DEV_ENV
     ? 'http://localhost:3000'
-    : 'https://codex.dulapahv.dev');
+    : 'https://code-x-real-time-code-editor-with-v.vercel.app');
 
 export const BASE_SERVER_URL =
   process.env.NEXT_PUBLIC_SOCKET_URL ||
@@ -28,7 +28,7 @@ export const BASE_SERVER_URL =
     : 'https://codex-real-time-code-editor-with-video-ns5k.onrender.com');
 
 export const STATUS_URL =
-  process.env.NEXT_PUBLIC_STATUS_URL || 'https://codex-status.dulapahv.dev';
+  process.env.NEXT_PUBLIC_STATUS_URL || 'https://codex-real-time-code-editor-with-video-ns5k.onrender.com';
 
 export const KASCA_SERVER_MONITOR_ID =
   process.env.KASCA_SERVER_MONITOR_ID || '3495778';
@@ -58,11 +58,11 @@ export const GITHUB_OAUTH_TITLE = 'GitHub OAuth Callback';
 export const GITHUB_OAUTH_DESCRIPTION =
   'This page is used to handle the GitHub OAuth callback.';
 
-export const NAME = 'Dulapah Vibulsanti';
-export const PORTFOLIO_URL = 'https://dulapahv.dev';
-export const CONTACT_URL = 'https://dulapahv.dev/contact';
-export const REPO_URL = 'https://github.com/dulapahv/codex';
-export const GITHUB_URL = 'https://github.com/dulapahv';
+export const NAME = 'Akash';
+export const PORTFOLIO_URL = 'https://github.com/MeAkash77';
+export const CONTACT_URL = 'https://github.com/MeAkash77';
+export const REPO_URL = 'https://github.com/MeAkash77';
+export const GITHUB_URL = 'https://github.com/MeAkash77';
 
 export const EDITOR_SETTINGS_KEY = 'editor-settings';
 
