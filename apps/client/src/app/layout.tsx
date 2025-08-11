@@ -26,7 +26,6 @@ import {
 } from '@/lib/constants';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { Analytics as LocalAnalytics } from '@/components/analytics';
 import { ThemeProvider } from '@/components/theme-provider';
 
 import './globals.css';
@@ -96,7 +95,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="darkreader-lock" />
       </head>
       <body className="h-dvh text-pretty antialiased">
-        <VercelAnalytics />
+        {process.env.NODE_ENV === "production" && <VercelAnalytics />}
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <TooltipProvider>{children}</TooltipProvider>
           <Toaster
