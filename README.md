@@ -25,6 +25,9 @@
 
 > This project is part of the course "COMPSCI4025P Level 4 Individual Project" at the University of Glasgow.
 
+**Frontend Part**
+<img width="959" height="443" alt="Image" src="https://github.com/user-attachments/assets/afaf53c6-3c70-4537-85b3-4d502a9cb028" />
+
 For detailed usage instructions and feature documentation, please see the **[User Manual](manual.md)**.
 
 ## Features
