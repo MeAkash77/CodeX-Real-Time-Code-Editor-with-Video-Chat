@@ -51,20 +51,7 @@ It combines **live coding**, **cursor sharing**, **video conferencing**, and **i
 - 🌍 **Multi-Language Support** – Syntax highlighting for multiple languages  
 - 💻 **Collaborative Terminal** – Shared command-line access  
 - 🚪 **One-Click Rooms** – No sign-up, just share a link  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 <div align="center">
   <a href="https://code-x-real-time-code-editor-with-v.vercel.app/">
     <img src="apps/client/public/images/cover.png" width="630" alt="codex cover image"/>
