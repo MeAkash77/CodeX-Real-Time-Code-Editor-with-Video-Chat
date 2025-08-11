@@ -9,11 +9,6 @@
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/🌐_Visit-Website-blueviolet?style=for-the-badge)](https://codex-app.vercel.app/)
-[![License: MIT](https://img.shields.io/github/license/MeAkash77/CodeX?style=for-the-badge&color=green)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/MeAkash77/CodeX?style=for-the-badge&color=yellow)](https://github.com/MeAkash77/CodeX/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/MeAkash77/CodeX?style=for-the-badge&color=blue)](https://github.com/MeAkash77/CodeX/network/members)
-
 [![Issues](https://img.shields.io/github/issues/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/pulls)
 [![Last Commit](https://img.shields.io/github/last-commit/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/commits)
