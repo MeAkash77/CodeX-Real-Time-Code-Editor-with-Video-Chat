@@ -25,16 +25,6 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://socket.io/)
 hi
-[![Website](https://img.shields.io/badge/🌐_Visit-Website-blueviolet?style=for-the-badge)](https://codex-app.vercel.app/)
-[![License: MIT](https://img.shields.io/github/license/MeAkash77/CodeX?style=for-the-badge&color=green)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/MeAkash77/CodeX?style=for-the-badge&color=yellow)](https://github.com/MeAkash77/CodeX/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/MeAkash77/CodeX?style=for-the-badge&color=blue)](https://github.com/MeAkash77/CodeX/network/members)
-
-[![Issues](https://img.shields.io/github/issues/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/commits)
-[![Contributors](https://img.shields.io/github/contributors/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/graphs/contributors)
-
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
