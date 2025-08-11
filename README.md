@@ -58,6 +58,7 @@ It combines **live coding**, **cursor sharing**, **video conferencing**, and **i
   </a>
 </div>
 ---
+
 **Frontend Part**
 <img width="959" height="443" alt="Image" src="https://github.com/user-attachments/assets/afaf53c6-3c70-4537-85b3-4d502a9cb028" />
 
