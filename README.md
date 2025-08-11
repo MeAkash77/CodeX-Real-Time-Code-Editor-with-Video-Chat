@@ -41,13 +41,6 @@ It combines **live coding**, **cursor sharing**, **video conferencing**, and **i
 
 ---
 
-## 📖 About CodeX
-
-CodeX is a **real-time online code collaboration platform** designed for developers, educators, and coding enthusiasts.  
-It combines **live coding**, **cursor sharing**, **video conferencing**, and **instant UI preview** — all inside your browser, no installation or account required.
-
----
-
 ## ✨ Features
 
 - 📝 **Real-Time Coding** – Instant code sync across all connected users  
