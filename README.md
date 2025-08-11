@@ -57,10 +57,11 @@ It combines **live coding**, **cursor sharing**, **video conferencing**, and **i
     <img src="apps/client/public/images/cover.png" width="630" alt="codex cover image"/>
   </a>
 </div>
-
+---
 **Frontend Part**
 <img width="959" height="443" alt="Image" src="https://github.com/user-attachments/assets/afaf53c6-3c70-4537-85b3-4d502a9cb028" />
 
+<img width="959" height="445" alt="Image" src="https://github.com/user-attachments/assets/16c4c03e-8e29-48a0-9d55-c5d05403f2b2" />
 
 **CodeX is an online code collaboration platform that enables real-time coding, cursor sharing, live UI preview, and video communication with integrated Git support—no sign-up required.**
 
