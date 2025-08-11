@@ -24,6 +24,33 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://socket.io/)
+hi
+[![Website](https://img.shields.io/badge/🌐_Visit-Website-blueviolet?style=for-the-badge)](https://codex-app.vercel.app/)
+[![License: MIT](https://img.shields.io/github/license/MeAkash77/CodeX?style=for-the-badge&color=green)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/MeAkash77/CodeX?style=for-the-badge&color=yellow)](https://github.com/MeAkash77/CodeX/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/MeAkash77/CodeX?style=for-the-badge&color=blue)](https://github.com/MeAkash77/CodeX/network/members)
+
+[![Issues](https://img.shields.io/github/issues/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/commits)
+[![Contributors](https://img.shields.io/github/contributors/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/graphs/contributors)
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://socket.io/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+[![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=for-the-badge&logo=webrtc&logoColor=white)](https://webrtc.org/)
+[![Prism.js](https://img.shields.io/badge/Prism.js-1A202C?style=for-the-badge&logo=prism&logoColor=white)](https://prismjs.com/)
+[![Monaco Editor](https://img.shields.io/badge/Monaco_Editor-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://microsoft.github.io/monaco-editor/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+[![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com/)
+[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
+[![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)](https://prettier.io/)
+
 
 </div>
 
