@@ -11,7 +11,7 @@
  */
 
 import type { ReactNode } from 'react';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from 'next';
 
 import { GeistMono } from 'geist/font/mono';
@@ -26,7 +26,7 @@ import {
 } from '@/lib/constants';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { Analytics } from '@/components/analytics';
+import { Analytics as LocalAnalytics } from '@/components/analytics';
 import { ThemeProvider } from '@/components/theme-provider';
 
 import './globals.css';
@@ -96,7 +96,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="darkreader-lock" />
       </head>
       <body className="h-dvh text-pretty antialiased">
-        <Analytics />
+        <VercelAnalytics />
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <TooltipProvider>{children}</TooltipProvider>
           <Toaster
