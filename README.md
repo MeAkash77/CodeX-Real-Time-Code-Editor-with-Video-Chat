@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1>💻 CodeX</h1>
-  <p>Real-time coding, live preview, and video chat—all in your browser, no sign-up required.CodeX is built for speed, simplicity, and teamwork. Whether you’re pair programming, conducting remote interviews, hosting coding workshops, or just hacking with friends, CodeX eliminates friction and keeps everyone in sync—code, communication, and collaboration in one place.</p>
+  <p>Real-time coding, live preview, and video chat all in your browser,no sign-up required.CodeX is built for speed,simplicity and teamwork.Whether you’re pair programming,conducting remote interviews,hosting coding workshops or just hacking with friends.CodeX eliminates friction and keeps everyone in sync—code,communication and collaboration in one place.</p>
 </div>
 
 <div align="center">
