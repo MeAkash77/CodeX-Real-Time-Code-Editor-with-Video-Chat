@@ -6,7 +6,8 @@
  * - OAuth credentials
  * - App metadata
  *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
+ * Updated to remove hardcoded production server URLs.
+ * Uses environment variables for deployment flexibility.
  */
 
 export const IS_DEV_ENV =
@@ -26,14 +27,19 @@ export const BASE_SERVER_URL =
     ? 'http://localhost:3001'
     : 'https://codex-real-time-code-editor-with-video-ns5k.onrender.com');
 
-export const STATUS_URL = 'https://codex-status.dulapahv.dev';
-export const KASCA_SERVER_MONITOR_ID = process.env.KASCA_SERVER_MONITOR_ID || '3495778';
+export const STATUS_URL =
+  process.env.NEXT_PUBLIC_STATUS_URL || 'https://codex-status.dulapahv.dev';
+
+export const KASCA_SERVER_MONITOR_ID =
+  process.env.KASCA_SERVER_MONITOR_ID || '3495778';
 
 export const GITHUB_API_URL = 'https://api.github.com';
 export const GITHUB_OAUTH_URL = 'https://github.com/login/oauth';
+
 export const GITHUB_CLIENT_ID = IS_DEV_ENV
   ? 'Ov23liuy4d9jGnpy9t6j'
   : 'Ov23liIuxEK1vcaIKIxP';
+
 export const GITHUB_CLIENT_SECRET = IS_DEV_ENV
   ? process.env.GITHUB_CLIENT_SECRET_DEV
   : process.env.GITHUB_CLIENT_SECRET_PROD;
@@ -51,6 +57,7 @@ export const LATENCY_TEST_DESCRIPTION =
 export const GITHUB_OAUTH_TITLE = 'GitHub OAuth Callback';
 export const GITHUB_OAUTH_DESCRIPTION =
   'This page is used to handle the GitHub OAuth callback.';
+
 export const NAME = 'Dulapah Vibulsanti';
 export const PORTFOLIO_URL = 'https://dulapahv.dev';
 export const CONTACT_URL = 'https://dulapahv.dev/contact';
