@@ -38,7 +38,8 @@ import {
   isVercelDeployment,
 } from './cors-config';
 
-const PORT = 3001;
+// Use environment port for Render/Heroku, fallback to 3001 locally
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3001;
 
 const app = App();
 
@@ -65,7 +66,9 @@ const io = new Server({
   },
   transports: ['websocket', 'polling'],
 });
+
 io.attachApp(app);
+
 io.engine.on('connection', (rawSocket) => {
   rawSocket.request = null;
 });
@@ -77,6 +80,7 @@ app.listen(PORT, (token) => {
   console.log(`codex-server listening on port: ${PORT}`);
 });
 
+// Root endpoint
 app.get('/', (res, req) => {
   const origin = req.getHeader('origin');
   const headers = getCorsHeaders(origin);
@@ -91,8 +95,17 @@ app.get('/', (res, req) => {
   );
 });
 
+// Health check endpoint for uptime monitoring
+app.get('/health', (res) => {
+  res.writeHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({ status: 'ok' }));
+});
+
 io.on('connection', (socket) => {
+  console.log(`Client connected: ${socket.id}`);
+
   socket.on('ping', () => socket.emit('pong'));
+
   socket.on(RoomServiceMsg.CREATE, async (name: string) =>
     roomService.create(socket, name),
   );
@@ -151,5 +164,9 @@ io.on('connection', (socket) => {
   socket.on(PointerServiceMsg.POINTER, (pointer: Pointer) =>
     pointerService.updatePointer(socket, pointer),
   );
-  socket.on('disconnecting', () => roomService.leave(socket, io));
+  socket.on('disconnecting', () => {
+    console.log(`Client disconnected: ${socket.id}`);
+    roomService.leave(socket, io);
+  });
 });
+
