@@ -90,7 +90,7 @@ After checking the [prerequisites](#prerequisites) above, follow these steps to 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/dulapahv/CodeX.git
+   git clone https://github.com/MeAkash77/CodeX-Real-Time-Code-Editor-with-Video-Chat.git
    cd CodeX
    ```
 
