@@ -6,9 +6,7 @@
  * - OAuth credentials
  * - App metadata
  *
- * Updated for your deployment:
- * Frontend: Vercel
- * Backend: Render
+ * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 export const IS_DEV_ENV =
@@ -16,18 +14,20 @@ export const IS_DEV_ENV =
   process.env.NEXT_PUBLIC_ENV === 'development' ||
   process.env.NODE_ENV === 'development';
 
-// Client URL (Frontend)
-export const BASE_CLIENT_URL = IS_DEV_ENV
-  ? 'http://localhost:3000'
-  : 'https://code-x-real-time-code-editor-with-video-chat-client-9ugjl66ah.vercel.app';
+export const BASE_CLIENT_URL =
+  process.env.NEXT_PUBLIC_CLIENT_URL ||
+  (IS_DEV_ENV
+    ? 'http://localhost:3000'
+    : 'https://codex.dulapahv.dev');
 
-// Server URL (Backend)
-export const BASE_SERVER_URL = IS_DEV_ENV
-  ? 'http://localhost:3001'
-  : 'https://codex-real-time-code-editor-with-video-ns5k.onrender.com';
+export const BASE_SERVER_URL =
+  process.env.NEXT_PUBLIC_SOCKET_URL ||
+  (IS_DEV_ENV
+    ? 'http://localhost:3001'
+    : 'https://codex-real-time-code-editor-with-video-ns5k.onrender.com');
 
 export const STATUS_URL = 'https://codex-status.dulapahv.dev';
-export const KASCA_SERVER_MONITOR_ID = '3495778';
+export const KASCA_SERVER_MONITOR_ID = process.env.KASCA_SERVER_MONITOR_ID || '3495778';
 
 export const GITHUB_API_URL = 'https://api.github.com';
 export const GITHUB_OAUTH_URL = 'https://github.com/login/oauth';
