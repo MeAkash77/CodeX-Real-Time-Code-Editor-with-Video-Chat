@@ -2,7 +2,6 @@
 
 
 <div align="center">
-  <img src="codexlogo.png" alt="CodeX Logo" width="90" height="90"/>
   <h1>💻 CodeX</h1>
   <p><em>Real-time coding, live preview, and video chat—all in your browser, no sign-up required.</em></p>
 </div>
