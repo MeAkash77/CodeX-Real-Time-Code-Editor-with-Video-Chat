@@ -10,17 +10,6 @@
 <img width="959" height="443" alt="Image" src="https://github.com/user-attachments/assets/afaf53c6-3c70-4537-85b3-4d502a9cb028" />
 
 
-<div align="center">
-  <a href="https://github.com/dulapahv/CodeX/actions/workflows/playwright.yml"><img src="https://github.com/dulapahv/CodeX/actions/workflows/playwright.yml/badge.svg"></a>
-  <a href="https://github.com/dulapahv/CodeX/actions/workflows/jest.yml"><img src="https://github.com/dulapahv/CodeX/actions/workflows/jest.yml/badge.svg"></a>
-</div>
-<div align="center">
-  <a href="https://github.com/dulapahv/CodeX/issues"><img src="https://img.shields.io/github/issues/dulapahv/CodeX.svg?style=flat" /></a>
-<!--   <a href="https://codeclimate.com/github/dulapahv/CodeX/maintainability"><img src="https://api.codeclimate.com/v1/badges/3984a19491b5e90cfa08/maintainability" /></a> -->
-</div>
-
-<br />
-
 **CodeX is an online code collaboration platform that enables real-time coding, cursor sharing, live UI preview, and video communication with integrated Git support—no sign-up required.**
 
 ## Features
