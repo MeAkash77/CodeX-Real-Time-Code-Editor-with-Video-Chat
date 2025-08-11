@@ -1,5 +1,76 @@
 # CodeX - Code Collaboration Platform
 
+
+<div align="center">
+  <img src="codexlogo.png" alt="CodeX Logo" width="90" height="90"/>
+  <h1>💻 CodeX</h1>
+  <p><em>Real-time coding, live preview, and video chat—all in your browser, no sign-up required.</em></p>
+</div>
+
+<div align="center">
+
+[![Website](https://img.shields.io/badge/🌐_Visit-Website-blueviolet?style=for-the-badge)](https://codex-app.vercel.app/)
+[![License: MIT](https://img.shields.io/github/license/MeAkash77/CodeX?style=for-the-badge&color=green)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/MeAkash77/CodeX?style=for-the-badge&color=yellow)](https://github.com/MeAkash77/CodeX/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/MeAkash77/CodeX?style=for-the-badge&color=blue)](https://github.com/MeAkash77/CodeX/network/members)
+
+[![Issues](https://img.shields.io/github/issues/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/commits)
+[![Contributors](https://img.shields.io/github/contributors/MeAkash77/CodeX?style=for-the-badge)](https://github.com/MeAkash77/CodeX/graphs/contributors)
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://socket.io/)
+
+</div>
+
+<p align="center">
+  <strong>🚀 The all-in-one collaborative coding platform with live code sync, video chat, Git integration, and instant preview.</strong>
+</p>
+
+<p align="center">
+  <a href="https://codex-app.vercel.app/">🔗 Live Demo</a> •
+  <a href="#-features">✨ Features</a> •
+  <a href="#-quick-start">⚡ Quick Start</a> •
+  <a href="#-contributing">🤝 Contributing</a>
+</p>
+
+---
+
+## 📖 About CodeX
+
+CodeX is a **real-time online code collaboration platform** designed for developers, educators, and coding enthusiasts.  
+It combines **live coding**, **cursor sharing**, **video conferencing**, and **instant UI preview** — all inside your browser, no installation or account required.
+
+---
+
+## ✨ Features
+
+- 📝 **Real-Time Coding** – Instant code sync across all connected users  
+- 🖱 **Live Cursor Sharing** – See where your collaborators are typing  
+- 🔄 **Instant UI Preview** – Live front-end preview as you type  
+- 🎥 **Video & Voice Chat** – WebRTC-powered communication  
+- 🔧 **Integrated Git Support** – Pull, push, and manage repos from the browser  
+- 🌍 **Multi-Language Support** – Syntax highlighting for multiple languages  
+- 💻 **Collaborative Terminal** – Shared command-line access  
+- 🚪 **One-Click Rooms** – No sign-up, just share a link  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div align="center">
   <a href="https://code-x-real-time-code-editor-with-v.vercel.app/">
     <img src="apps/client/public/images/cover.png" width="630" alt="codex cover image"/>
