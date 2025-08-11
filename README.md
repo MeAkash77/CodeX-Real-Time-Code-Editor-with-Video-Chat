@@ -30,13 +30,6 @@
   <strong>🚀 The all-in-one collaborative coding platform with live code sync, video chat, Git integration, and instant preview.</strong>
 </p>
 
-<p align="center">
-  <a href="https://codex-app.vercel.app/">🔗 Live Demo</a> •
-  <a href="#-features">✨ Features</a> •
-  <a href="#-quick-start">⚡ Quick Start</a> •
-  <a href="#-contributing">🤝 Contributing</a>
-</p>
-
 ---
 
 ## 📖 About CodeX
