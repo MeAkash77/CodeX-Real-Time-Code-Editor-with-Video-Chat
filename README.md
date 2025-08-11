@@ -1,5 +1,5 @@
 <div align="center">
-CodeX - Code Collaboration Platform
+<h1>CodeX - Code Collaboration Platform</h1>
 </div>
 
 <div align="center">
