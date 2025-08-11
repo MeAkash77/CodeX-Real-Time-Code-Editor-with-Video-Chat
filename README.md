@@ -21,15 +21,6 @@
 
 **CodeX is an online code collaboration platform that enables real-time coding, cursor sharing, live UI preview, and video communication with integrated Git support—no sign-up required.**
 
-**✨ Try now at [https://code-x-real-time-code-editor-with-v.vercel.app/](https://code-x-real-time-code-editor-with-v.vercel.app/)**
-
-> This project is part of the course "COMPSCI4025P Level 4 Individual Project" at the University of Glasgow.
-
-**Frontend Part**
-<img width="959" height="443" alt="Image" src="https://github.com/user-attachments/assets/afaf53c6-3c70-4537-85b3-4d502a9cb028" />
-
-For detailed usage instructions and feature documentation, please see the **[User Manual](manual.md)**.
-
 ## Features
 
 - **Real-time Collaboration** - Code together in real-time with cursor sharing, highlighting, and follow mode
